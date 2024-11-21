@@ -1,0 +1,162 @@
+.intro{
+    display: flex;
+    min-height: 88vh;
+    margin-top: 4rem;
+}
+.i-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 1;
+    padding: 50px;
+}
+.i-right{
+    flex:1;
+    display: flex;
+    align-items: center;
+  
+}
+.i-name{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hi{
+  color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.myname{
+    color: orange;
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.role{
+    color: rgb(0, 221, 241);
+    font-size: 4.5rem;
+    font-weight: bold;
+}
+#i-btn{
+    max-width: 80px;
+}
+
+.floating-image {
+    margin: 0px auto;
+    max-width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    animation: floatAnimation 3s ease-in-out infinite; 
+    transition: all 0.3s;
+  }
+  .i-icons{
+    margin-top: 130px;
+    display:flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .i-icons div{
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+    gap: 5px;
+    transition: all 0.3s;
+  }
+  .i-icons div:hover{
+    transform: scale(105%);
+  }
+  .i-icons img{
+    width:50px;
+    height:50px;
+  }
+  @keyframes floatAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    .intro{
+      display: flex;
+      flex-direction: column;
+      margin-top: 100px;
+      min-height: unset;
+  }
+  .i-left{
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    flex: 0;
+    padding: 10px;
+}
+.i-right{
+  margin-top: 20px;
+  flex:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.floating-image {
+  margin: 0px auto;
+  max-width: 270px;
+  height: 270px;
+  border-radius: 50%;
+  animation: floatAnimation 3s ease-in-out infinite; /* Adjust the animation duration and timing function as desired */
+  transition: all 0.3s;
+}
+.i-name{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.hi{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.myname{
+  color: orange;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.role{
+  color: rgb(0, 221, 241);
+  font-size: 2rem;
+  font-weight: bold;
+}
+#i-btn{
+  margin-right: 30px;
+  transform: scale(90%);
+  right: 10px;
+}
+.i-icons{
+  margin-top: 30px;
+  display:flex;
+  align-items: center;
+  gap: 10px;
+
+}
+.i-icons div{
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-size: 12px;
+  gap: 5px;
+  transition: all 0.3s;
+}
+.i-icons img{
+  width:30px;
+  height:30px;
+}
+  }

@@ -1,0 +1,54 @@
+
+.nav-items{
+    margin-right: 30px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.nav-items:hover{
+    transform: translateY(-5px);
+}
+#menu-icon{
+   display:none;
+}
+
+#app-bar{
+    
+    background-color: rgba(255, 255, 255, 0.152);
+    backdrop-filter: blur(5px);
+    box-shadow: none;
+}
+#app-bar-name{
+    margin: 0px;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: 'Italianno', cursive;
+}
+#app-bar-name span{
+    color: orange;
+}
+.toggle-nav-bar{
+    text-align: center;
+    background-color: rgb(0, 183, 255);
+}
+.toggle-nav-bar h3{
+    margin: 2px;
+    border: 2px solid black;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav-items{
+        display: none;
+    }
+    #nav-items{
+        display: none;
+    }
+    #menu-icon{
+        display:block;
+     }
+     #app-bar-name{
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,88 @@
+.contact-container{
+    min-height: 88vh;
+    display: flex;
+    align-items: center;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.contact-left h1{
+    margin: 0px;
+    font-size: 70px;
+    color: white;
+}
+
+.contact-left p{
+    margin: 5px;
+    font-size: 40px;
+    color: aqua;
+}
+.form-container{
+    flex: 1;
+}
+.text-field-container{
+    padding: 20px;
+    max-width: 500px;
+    min-height: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid white;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 5px  rgba(255, 255, 255, 0.221); ;
+    gap: 20px;
+}
+@media screen and (max-width: 768px) {
+    .contact-container{
+        min-height: unset;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-left h1{
+        margin: 0px;
+        font-size: 40px;
+        color: white;
+    }
+    
+    .contact-left p{
+        margin: 5px;
+        font-size: 20px;
+        color: aqua;
+    }
+    .text-field-container{
+        padding: 20px;
+        width: 250px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 2px solid white;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        box-shadow: 10px 10px 5px 5px  rgba(255, 255, 255, 0.221); ;
+        gap: 10px;
+    }
+    .contact-left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0;
+    }
+    .contact-left h1{
+        margin: 0px;
+        font-size: 35px;
+        color: white;
+    }
+    .contact-left p{
+        margin: 5px;
+        font-size: 15px;
+        color: aqua;
+    }
+}

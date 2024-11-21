@@ -1,0 +1,46 @@
+.about-container{
+    min-height:88vh;
+    /* background-color: brown; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.about-container h1{
+    font-size: 40px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.about-container p{
+    margin: 0px;
+    padding: 10px;
+    text-align:center;
+    max-width: 980px;
+    color: white;
+    font-size: 25px;
+    font-family: 'Alkatra', cursive;
+}
+.about-container p span{
+    color: yellow;
+}
+.about-container .courses{
+    color:rgb(205, 50, 50);
+}
+
+@media screen and (max-width: 768px){
+    .about-container p{
+        text-align:center;
+        max-width: 980px;
+        color: white;
+        font-size: 12px;
+    }
+    .about-container h1{
+        font-size: 25px;
+    }
+   .about-container{
+    min-height:unset;
+     margin-top: 20px;
+    
+    } 
+}
