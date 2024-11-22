@@ -1,15 +1,10 @@
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import dailycolor from "../images/dailycolor.jpg";
-import movieApp from "../images/movieApp.jpg";
-import webScrapper from "../images/webScrapper.jpg";
-import Ekart from "../images/Ekart.jpg";
-import colorBlock from "../images/colorBlock.jpg";
+import webScrapper from "../images/real-estate.png";
+import colorBlock from "../images/tictactoe.png";
 import "./project.css";
-import { useEffect } from "react";
+import { useEffect, useContext } from "react";
 import AOS from "aos";
 import { ThemeContext } from "./NavBar";
-import { useContext } from "react";
 
 export function Project() {
   const { styles } = useContext(ThemeContext);
@@ -18,40 +13,22 @@ export function Project() {
   }, []);
   const projects = [
     {
-      id: "E-kart",
-      title: "E Kart",
-      imgSrc: Ekart,
-      frontEndSource: "https://github.com/AJITH1509/e-commerce-frontend",
-      live: "https://e-kart-shop.netlify.app",
-      backEndSource: "https://github.com/AJITH1509/e-commerce-backend",
-      techStack: "Reactjs, NodeJs, Express, MongoDb",
-    },
-    {
-      id: "daily-color",
-      title: "Daily color suggestion",
-      imgSrc: dailycolor,
-      frontEndSource: "https://github.com/AJITH1509/capstone-project-front-end",
-      live: "https://daily-color.netlify.app",
-      backEndSource: "https://github.com/AJITH1509/Capstone-project-back-end",
-      techStack: "Reactjs, NodeJs, Express, MongoDb",
-    },
-    {
       id: "web-scrapper",
-      title: "Web Scrapper",
+      title: "Real Estate",
       imgSrc: webScrapper,
       frontEndSource:
-        "https://github.com/AJITH1509/webcode-2-webscrape-frontend",
-      live: "https://graceful-syrniki-59528c.netlify.app/",
+        "https://github.com/jaisonjeba/mern-estate-frontend.git",
+      live: "https://steady-smakager-7028cf.netlify.app/",
       backEndSource:
-        "https://github.com/AJITH1509/webcode-2-webscraping-backend",
+        "https://github.com/jaisonjeba/mern-estate.git",
       techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "color-blocks",
-      title: "Color Block",
+      title: "Movie App",
       imgSrc: colorBlock,
-      frontEndSource: "https://github.com/AJITH1509/Color-Game",
-      live: "https://color-blocks.netlify.app/",
+      frontEndSource: "https://github.com/jaisonjeba/movie-app.git",
+      live: "https://stately-hotteok-5a9f14.netlify.app/",
       techStack: "Reactjs",
     },
   ];
