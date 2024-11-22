@@ -43,7 +43,7 @@ export function Project() {
         Project
       </h1>
       <p data-aos="fade-up" data-aos-delay="500">
-        The login credentials are already filled in the text field by default.
+        Log-in credentials - ID: jaison@gmail.com & PW: jaison@gmail.com
       </p>
       <div className="mySwiper">
         {projects.map((project) => (

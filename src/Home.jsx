@@ -11,7 +11,7 @@ import { ThemeContext } from "./NavBar";
 import { useContext } from "react";
 function redirectToLink() {
   window.open(
-    "https://docs.google.com/document/d/1psbv0r8Ju24PHMDJgEEvUU90cGT7GUHTo_HPXSJIdpw/edit?usp=drive_link"
+    "https://drive.google.com/file/d/1gWy0wtUdF01AZf2_uXFzeSFbb-5yQH5U/view?usp=sharing"
   );
 }
 

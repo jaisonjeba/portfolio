@@ -38,13 +38,6 @@ export const Skills = () => {
     },
     {
       imgSrc:
-        "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angular/angular-original.svg",
-      alt: "Angular",
-      text: "Angular",
-      value: 70,
-    },
-    {
-      imgSrc:
         "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
       alt: "Redux",
       text: "Redux",
