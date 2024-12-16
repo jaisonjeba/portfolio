@@ -1,10 +1,14 @@
 import React from "react";
-import webScrapper from "../images/real-estate.png";
-import colorBlock from "../images/tictactoe.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import webScrapper from "../images/webScrapper.jpg";
+import dailycolor from "../images/dailycolor.jpg";
+import Ekart from "../images/Ekart.jpg";
+import colorBlock from "../images/colorBlock.jpg";
 import "./project.css";
-import { useEffect, useContext } from "react";
+import { useEffect } from "react";
 import AOS from "aos";
 import { ThemeContext } from "./NavBar";
+import { useContext } from "react";
 
 export function Project() {
   const { styles } = useContext(ThemeContext);
@@ -13,24 +17,42 @@ export function Project() {
   }, []);
   const projects = [
     {
+      id: "E-kart",
+      title: "E Kart",
+      imgSrc: Ekart,
+      frontEndSource: "https://github.com/jaisonjeba/E-Commerce-Front-End.git",
+      live: "https://majestic-cannoli-16db77.netlify.app/",
+      backEndSource: "https://github.com/jaisonjeba/E-Commerce-Back-End.git",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
+    },
+    {
+      id: "daily-color",
+      title: "Daily color suggestion",
+      imgSrc: dailycolor,
+      frontEndSource: "https://github.com/jaisonjeba/Daily-Color-Front-End.git",
+      live: "https://ornate-seahorse-aef842.netlify.app/",
+      backEndSource: "https://github.com/jaisonjeba/Daily-Color-Back-End.git",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
+    },
+    {
       id: "web-scrapper",
-      title: "Real Estate",
+      title: "Todo Project",
       imgSrc: webScrapper,
       frontEndSource:
-        "https://github.com/jaisonjeba/mern-estate-frontend.git",
-      live: "https://steady-smakager-7028cf.netlify.app/",
+        "https://github.com/jaisonjeba/todo-frontend.git",
+      live: "https://loquacious-sunburst-c7727c.netlify.app/",
       backEndSource:
-        "https://github.com/jaisonjeba/mern-estate.git",
+        "https://github.com/jaisonjeba/todo-backend.git",
       techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
       id: "color-blocks",
-      title: "Movie App",
+      title: "Color Block",
       imgSrc: colorBlock,
-      frontEndSource: "https://github.com/jaisonjeba/movie-app.git",
-      live: "https://stately-hotteok-5a9f14.netlify.app/",
+      frontEndSource: "https://github.com/jaisonjeba/Color-Game.git",
+      live: "https://bespoke-pudding-dfdbb8.netlify.app/",
       techStack: "Reactjs",
-    },
+    }
   ];
 
   const openLink = (link) => {
@@ -43,7 +65,7 @@ export function Project() {
         Project
       </h1>
       <p data-aos="fade-up" data-aos-delay="500">
-        Log-in credentials - ID: jaison@gmail.com & PW: jaison@gmail.com
+        The login credentials are already filled in the text field by default.
       </p>
       <div className="mySwiper">
         {projects.map((project) => (

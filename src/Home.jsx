@@ -33,7 +33,7 @@ export const Home = () => {
           <span className="role" data-aos="fade-up" data-aos-delay="1000">
             Full stack developer
           </span>
-          <Button onClick={redirectToLink} id="i-btn" variant="outlined">
+          <Button onClick={redirectToLink} id="i-btn" variant="outlined" className="highlighted-button">
             Resume
           </Button>
           <div className="i-icons">
