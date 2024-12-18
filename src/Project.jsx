@@ -36,13 +36,13 @@ export function Project() {
     },
     {
       id: "web-scrapper",
-      title: "Todo Project",
+      title: "URL Shortener App",
       imgSrc: webScrapper,
       frontEndSource:
-        "https://github.com/jaisonjeba/todo-frontend.git",
-      live: "https://loquacious-sunburst-c7727c.netlify.app/",
+        "https://github.com/jaisonjeba/URL-Shortner.git",
+      live: "https://glistening-bunny-90c8b3.netlify.app/",
       backEndSource:
-        "https://github.com/jaisonjeba/todo-backend.git",
+        "https://github.com/jaisonjeba/URL-Shortner-BE.git",
       techStack: "Reactjs, NodeJs, Express, MongoDb",
     },
     {
