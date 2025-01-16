@@ -47,11 +47,13 @@ export function Project() {
     },
     {
       id: "color-blocks",
-      title: "Color Block",
+      title: "Twitter",
       imgSrc: colorBlock,
-      frontEndSource: "https://github.com/jaisonjeba/Color-Game.git",
-      live: "https://bespoke-pudding-dfdbb8.netlify.app/",
-      techStack: "Reactjs",
+      frontEndSource: "https://github.com/jaisonjeba/twitter/tree/main/frontend",
+      live: "https://twitter-tavd.onrender.com/",
+      backEndSource:
+        "https://github.com/jaisonjeba/twitter/tree/main/backend",
+      techStack: "Reactjs, NodeJs, Express, MongoDb",
     }
   ];
 
